@@ -2,8 +2,8 @@
 /* CSS Document */
 
 
-#main-header {
-			 line-height:23px;
+		.main-header {
+		   line-height:23px;
 			 font-weight:500;
 			 top:0;
 			 background-color:#00bcff;
@@ -11,12 +11,6 @@
 			 box-shadow:0 1px 0 rgba(0,0,0,.1);
 			 position:relative;
 			 z-index:99; }
-		.header {
-		  padding: 60px;
-		  text-align:center;
-		  background:#1ABC9C;
-		  color:#FFF;
-		  font-size: 30px; }
 
 body,html{font-size: 18px}
 		p {color:#19A74D}
