@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#main-header {
+			 line-height:23px;
+			 font-weight:500;
+			 top:0;
+			 background-color:#00bcff;
+			 width:100%;
+			 box-shadow:0 1px 0 rgba(0,0,0,.1);
+			 position:relative;
+			 z-index:99; }
+		.header {
+		  padding: 60px;
+		  text-align:center;
+		  background:#1ABC9C;
+		  color:#FFF;
+		  font-size: 30px; }
+
+body,html{font-size: 18px}
+		p {color:#19A74D}
+		p.yellow {color:#D5DE20}
+		
+		h1,h2 {font-size:30px; font-family:"Gill Sans", Helvetica, Arial, "sans-serif"}
+		h2 {color:#2E2DDA}
+		a {text-decoration:none; color:#19A74D}
+		a:hover{text-decoration:underline;}
+
+#mc_embed_signup{
+			 clear:left;
+			 font:10px Helvetica,Arial,sans-serif;
+			 width:29em; }
+	input.email{
+			 left:0;
+			 width:70%;
+			 border-radius:5px;
+			 background:#fff;
+			 height:40px;
+			 position:absolute; }
+	input.button:hover{ background-color:#fff; color:grey;}
+		 .button {
+			 position:absolute;
+			 left:70%;
+			 height:40px;
+			 display:inline-block;
+			 border-radius:5px;
+			 background-color:#00bcff;
+			 border:none;
+			 color:#FFFFFF;
+			 text-align:center;
+			 font-size:14px;
+			 font-weight:bold;
+			 padding:2%;
+			 transition:all 0.5s;
+			 box-shadow:0 0px 1px 0 rgba(0,0,0,0.2),0 1px 2px 0 rgba(0,0,0,0.19); 	}
+
+
