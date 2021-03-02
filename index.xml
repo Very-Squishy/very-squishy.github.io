@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="xmlstyle.css"?>
+
+<music_library>
+	<entry>
+		<music_info>
+			<artist>Lionel Yu</artist>
+			<album>MusicalBasics</album>
+			<name>Moonlight Sonata Nightmare</name>
+		</music_info>
+		<metadata>
+			<genre>Chill Dubstep</genre>
+			<year>2020</year>
+			<length>5:22</length>
+			<type>audio</type>
+		</metadata>
+		<link>https://open.spotify.com/track/7C7QG1Ys6cJB5cdofrJiGO</link>
+	</entry>
+	
+	<entry>
+		<music_info>
+			<artist>Lionel Yu, Joseph Khodanian</artist>
+			<album>MusicalBasics</album>
+			<name>Für Elise Nightmare</name>
+		</music_info>
+		<metadata>
+			<genre>Chill Dubstep</genre>
+			<year>2020</year>
+			<length>3:40</length>
+			<type>audio</type>
+		</metadata>
+		<link>https://open.spotify.com/track/5Q0A4lVCepioAYy5J5YWJ0</link>
+	</entry>
+
+	<entry>
+		<music_info>
+			<artist>Delerium, Nerina Pallot, Signum</artist>
+			<album>ASOT Classics, Vol9</album>
+			<track>15</track>
+			<name>Truly - Signum Remix</name>
+		</music_info>
+		<metadata>
+			<genre>Chill Trance</genre>
+			<year>2014</year>
+			<length>3:40</length>
+			<type>audio</type>
+		</metadata>
+		<link>https://open.spotify.com/track/277cdNDLQ2B81iUil1C23d</link>
+	</entry>
+
+	<entry>
+		<music_info>	
+			<artist>Within Temptation</artist>
+			<album>Heart of Everything (Live)</album>
+			<name>Hand of Sorrow</name>
+		</music_info>
+		<metadata>
+			<genre>Operatic Metal</genre>
+			<year>2009</year>
+			<length>6:24</length>
+			<type>video</type>
+		</metadata>
+		<link>https://www.youtube.com/watch?v=TDhbewTR_vg</link>
+	</entry>
+
+	<entry>
+		<music_info>
+			<artist>Nigel John Stanford</artist>
+			<album>CYMATICS: Science Vs. Music</album>
+			<name>CYMATICS: Science Vs. Music</name>
+		</music_info>
+		<metadata>
+			<genre>Instrumental Trance</genre>
+			<year>2014</year>
+			<length>5:52</length>
+			<type>video</type>
+		</metadata>
+		<link>https://www.youtube.com/watch?v=Q3oItpVa9fs</link>
+	</entry>
+	
+	<entry>
+		<music_info>
+			<artist>Pentatonix</artist>
+			<name>Love Again</name>
+		</music_info>
+		<metadata>
+			<genre>A Capella</genre>
+			<year>2014</year>
+			<length>3:19</length>
+			<type>video</type>
+		</metadata>
+		<link>https://www.youtube.com/watch?v=F80FsZDTgn0</link>
+	</entry>
+	
+	<entry>
+		<music_info>	
+			<artist>Infected Mushroom</artist>
+			<album>Vicious Delicious</album>
+			<track>1</track>
+			<name>Becoming Insane</name>
+		</music_info>
+		<metadata>
+			<genre>PsyTrance</genre>
+			<year>2007</year>
+			<length>7:20</length>
+			<type>audio</type>
+		</metadata>
+		<link>https://open.spotify.com/track/1Nukcy7xk7AbS7MtkaiOe3</link>
+	</entry>
+	
+	<entry>
+		<music_info>
+			<artist>Infected Mushroom</artist>
+			<album>Vicious Delicious</album>
+			<track>2</track>
+			<name>Artillery</name>
+		</music_info>
+		<metadata>
+			<genre>PsyTrance</genre>
+			<year>2007</year>
+			<length>4:28</length>
+			<type>audio</type>
+		</metadata>
+		<link>https://open.spotify.com/track/3AxOIDbfsIUSsuWfUdkvOs</link>
+	</entry>
+
+	<entry>
+		<music_info>
+			<artist>Hybrid</artist>
+			<album>I Choose Noise</album>
+			<track>2</track>
+			<name>Dogstar</name>
+		</music_info>
+		<metadata>
+			<genre>Instrumental Trance</genre>
+			<year>2006</year>
+			<length>8:01</length>
+			<type>audio</type>
+		</metadata>
+		<link>https://open.spotify.com/track/2lN3El3o3ZFuZoeTrDippc</link>
+	</entry>
+	
+	<entry>
+		<music_info>
+			<artist>Hybrid</artist>
+			<album>I Choose Noise</album>
+			<track>3</track>
+			<name>I Choose Noise</name>
+		</music_info>
+		<metadata>
+			<genre>Instrumental Trance</genre>
+			<year>2006</year>
+			<length>5:28</length>
+			<type>audio</type>
+		</metadata>
+		<link>https://open.spotify.com/track/4uLJoOUcEDa4VUbUXB8OVU</link>
+	</entry>	
+	
+</music_library>
