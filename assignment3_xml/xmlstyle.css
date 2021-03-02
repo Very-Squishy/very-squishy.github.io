@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+entry {display:block; border-bottom:2px solid #000; padding: 10px 10px;}
+entry:before {font-size: 15px; content:"Entry: "}
+entry music_info {display:grid; font-size: 20px; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; padding: 10px 10px;}
+	entry music_info artist:before {content:"Artist: ";}
+	entry music_info album:before {content:"Album:    ";}
+entry music_info track:before {content:"Track Number: ";}
+	entry music_info name:before {content:"Song Title: ";}
+entry metadata {display:grid; padding: 10; font-size: 15px;}
+entry metadata:before {font-size: 15px; content:"Metadata: "; }
+	entry metadata genre:before{content:"Genre:"}
+	entry metadata year:before{content:"Year:"}
+	entry metadata length:before{content:"Length:"}
+	entry metadata type:before {content:"Type:"}
+entry link {font-size: 20px; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; display:grid; padding: 10px 10px;}
+entry link:before{font-size: 15px; content:"Link: "}
