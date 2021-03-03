@@ -26,7 +26,8 @@
 		total = hotdog_total + fries_total + drink_total;
 		
 		if (total >= 20){
-				document.write("<br>|  Your purchase is over $20.  Automatic 10% discount applied: -$" + total*.1);	
+				disc = total*.1;
+				document.write("<br>|  Your purchase is over $20.  Automatic 10% discount applied: -$" + disc);	
 				total *=.9;
 				total = total.toPrecision(2);
 		}
