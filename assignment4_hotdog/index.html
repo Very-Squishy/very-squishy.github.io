@@ -16,6 +16,7 @@
 	
 		fries = parseInt(prompt('How many fries would you like?',''));
 		fries_total = fries * 2.00;
+		fries_total = fries_total.toFixed(2);
 		document.write("<br>|  Fries: &#9; " + fries + "\t\t$" + fries_total);
 		
 		drinks = parseInt(prompt('How many drinks would you like?',''));
@@ -27,10 +28,13 @@
 		if (total >= 20){
 				document.write("<br>|  Your purchase is over $20.  Automatic 10% discount applied: -$" + total*.1);	
 				total *=.9;
+				total = total.toFixed(2);
 		}
 		
 		tax = total*.0625;
-		document.write("|  Tax: "+ tax);
+		tax = tax.toFixed(2);
+		document.write("<br>|  Tax: "+ tax);
+		total += tax;
 		total_amt = "------------------------------------------- <br>--  Your total: $" + total + "<br> ------------------------------------------- <br>";
 		document.write("<br>" + total_amt);
 		
