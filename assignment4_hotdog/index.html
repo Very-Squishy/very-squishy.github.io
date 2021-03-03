@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Joe’s Hotdogs</title>
+</head>
+
+<body>
+	
+	<script language="javascript">
+		document.write("Welcome to Joe's Hotdogs! <br> ------------------------------------------- <br>");
+		
+		hotdogs = parseInt(prompt('Welcome!  How many hot dogs would you like?',''));
+		hotdog_total = hotdogs * 3.25;
+		document.write("<br>|  Hotdogs: \t" + hotdogs + "\t\t$" + hotdog_total);
+	
+		fries = parseInt(prompt('How many fries would you like?',''));
+		fries_total = fries * 2.00;
+		document.write("<br>|  Fries: &#9; " + fries + "\t\t$" + fries_total);
+		
+		drinks = parseInt(prompt('How many drinks would you like?',''));
+		drink_total = drinks * 1.50;
+		document.write("<br>|  Drinks: \t" + drinks + "\t\t$" + drink_total);
+		
+		total = hotdog_total + fries_total + drink_total;
+		total_amt = "------------------------------------------- <br>--  Your total: $" + total + "<br> ------------------------------------------- <br>";
+		document.write("<br>" + total_amt);
+		
+		discount = confirm("Do you have a discount code?")
+		if (discount == 1){
+			disc_code = prompt('Enter your discount code:','');
+			
+			if (disc_code == "moo"){
+				document.write("<br>|  Discount applied! -$1.00");	
+				total -= 1;
+				
+				total_amt = "<br> ------------------------------------------- <br>--  Your new total: $" + total + "<br> ------------------------------------------- <br>";
+				document.write("<br>" + total_amt);
+			}
+			else{
+				alert("Wrong discount code, sorry")
+			}
+		}
+
+		
+	</script>
+	
+	
+	
+</body>
+</html>
