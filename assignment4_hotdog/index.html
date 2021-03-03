@@ -12,31 +12,36 @@
 		
 		hotdogs = parseInt(prompt('Welcome!  How many hot dogs would you like?',''));
 		hotdog_total = hotdogs * 3.25;
-		document.write("<br>|  Hotdogs: \t" + hotdogs + "\t\t$" + hotdog_total);
+		document.write("<br>|  Hotdogs: \t" + hotdogs + "<br>|---------------$" + hotdog_total);
 	
 		fries = parseInt(prompt('How many fries would you like?',''));
-		fries_t = fries * 2.00;
-		fries_total = fries_t.toPrecision(2);
-		document.write("<br>|  Fries: &#9; " + fries + "\t\t$" + fries_total);
+		fries_total = fries * 2.00;
+		document.write("<br>|  Fries: &#9; " + fries + "<br>|---------------$" + fries_total + ".00");
 		
 		drinks = parseInt(prompt('How many drinks would you like?',''));
 		drink_total = drinks * 1.50;
-		document.write("<br>|  Drinks: \t" + drinks + "\t\t$" + drink_total);
+		document.write("<br>|  Drinks: \t" + drinks + "<br>|---------------$" + drink_total + "0");
 		
 		total = hotdog_total + fries_total + drink_total;
 		
+		document.write("<br>------------------------------------------- <br><br>|------------- Total: $" + total);
+		//total = parseFloat(total);
+		
 		if (total >= 20){
-				disc = total*.1;
-				document.write("<br>|  Your purchase is over $20.  Automatic 10% discount applied: -$" + disc);	
-				total *=.9;
-				total = total.toPrecision(2);
+				disc = parseFloat(total*.1);
+				disc = disc.toFixed(2);
+				document.write("<br>|  Your purchase is over $20.  Automatic 10% discount applied:<br>|------------- Discount: -$" + disc);	
+				total = parseFloat(total)*.9;
 		}
 		
-		t = total*.0625;
-		tax = t.toPrecision(2);
+		t = parseFloat(total * .0625);
+		tax = t.toFixed(2);
 		
-		document.write("<br>|  Tax: "+ tax);
-		total += tax;
+		document.write("<br>|------------- Tax (6.25%): +$" + tax);
+		tax = parseFloat(tax);
+		
+		t = tax + total; 
+		total = t.toFixed(2);
 		total_amt = "------------------------------------------- <br>--  Your total: $" + total + "<br> ------------------------------------------- <br>";
 		document.write("<br>" + total_amt);
 		
@@ -57,11 +62,6 @@
 				alert("Wrong discount code, sorry")
 			}
 		}
-
-		
 	</script>
-	
-	
-	
 </body>
 </html>
