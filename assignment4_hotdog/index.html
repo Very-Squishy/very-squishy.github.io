@@ -23,8 +23,15 @@
 		document.write("<br>|  Drinks: \t" + drinks + "\t\t$" + drink_total);
 		
 		total = hotdog_total + fries_total + drink_total;
+		
+		if (total >= 20){
+				document.write("<br>|  Your purchase is over $20.  Automatic 10% discount applied: -$" + total*.1);	
+				total *=.9;
+		}
 		total_amt = "------------------------------------------- <br>--  Your total: $" + total + "<br> ------------------------------------------- <br>";
 		document.write("<br>" + total_amt);
+		
+		
 		
 		discount = confirm("Do you have a discount code?")
 		if (discount == 1){
