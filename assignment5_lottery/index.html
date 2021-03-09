@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Lucky ball</title>
+</head>
+
+<body>
+	
+	<script language="javascript">
+	// functions
+		// generate lottery numbers
+		function generate(a)
+		{
+			for(i=0; i<5; i++)	
+				a[i] = Math.floor(Math.random()*48) + 1;
+			
+			b = Math.floor(Math.random()*18) + 1;
+			
+			a.push(b);
+		}
+		
+		//Compare numbers
+		function compare(a, b, c, d, count, ln)
+		{
+			count=0;
+			
+			document.write("<br><br> Your matches are  :: ");
+			for (i=0; i<5; i++)
+			{
+				if(a[i] == b[i])
+				{
+					document.write("<strong>" + b[i] + " </strong>");	
+					count++;
+				}		
+			}
+			
+			if(c==d) 
+			{
+				document.write("|| <strong>!" + c + "!</strong>");	
+				ln = 1;
+			}
+			else 
+			{
+				ln = 0;
+			}
+		}
+
+		//====================================================
+		
+		document.write("<br>==========================================");
+		document.write("<br><strong>Welcome to MassLottery Lucky Ball Draw!</strong>");
+		document.write("<br>==========================================");
+		//Get and sort user numbers
+		user_entry = prompt("Enter 5 numbers separated by spaces (1-48):","");
+		user_nums = new Array();
+		user_nums = user_entry.split(" ");
+		for (i=0; i<5; i++) parseInt(user_nums[i]);
+		user_nums.sort(function(a,b){return a-b});
+		
+		user_ln = parseInt(prompt("Now, pick your lucky number (1-18):",""));		
+		
+		//output user numbers
+		document.write("<br><br>You picked numbers :: ");		
+		for (i=0; i<5; i++) document.write(user_nums[i] + " | ");
+		document.write("| <strong>" + user_ln + "</strong>");		
+		
+		
+		// Draw and sort the lottery numbers
+		arr1 = new Array();
+		generate(arr1);
+		lball = arr1.pop();
+		arr1.sort(function(a,b){return a-b});
+		
+		// Output the lottery numbers
+		document.write("<br><br> Lottery numbers are :: ");		
+		for (i=0; i<5; i++) document.write(arr1[i] + " | ");
+		document.write("| <strong>" + lball + "</strong>");
+		
+		
+		//====================================================
+		// Compare the numbers and announce matches
+		count = 0;
+		ln = 0;
+		compare(user_nums, arr1, user_ln, lball, count, ln);
+		
+		if (count!=0)
+			document.write("<br><strong>Congratulations!  You have:" + count +"regular matche(s)</strong>");
+		if (ln!=0)
+			document.write("<br><strong>Congratulations!  You matched the Lucky Number!!! </strong>");
+		
+		
+		//display winnings, if any
+		if (count==5 && ln==1) document.write("<br><strong>You've won $7,000 A WEEK FOR LIFE</strong>");
+		else if (count==5 && ln==0) document.write("<br><strong>You've won $25,000 A YEAR FOR LIFE</strong>");
+		else if (count==4 && ln==1) document.write("<br><strong>You've won $5,000!</strong>");
+		else if (count==4 && ln==1) document.write("<br><strong>You've won $5,000!</strong>");
+		else if (count==4 && ln==0) document.write("<br><strong>You've won $200!</strong>");
+		else if (count==3 && ln==1) document.write("<br><strong>You've won $150!</strong>");
+		else if (count==3 && ln==0) document.write("<br><strong>You've won $20!</strong>");
+		else if (count==2 && ln==1) document.write("<br><strong>You've won $25!</strong>");
+		else if (count==2 && ln==0) document.write("<br><strong>You've won $3!</strong>");
+		else if (count==1 && ln==1) document.write("<br><strong>You've won $6!</strong>");
+		else if (count==0 && ln==1) document.write("<br><strong>You've won $4!</strong>");
+		else document.write("<br>Sorry, you didn't win anything.  Try again! ");
+		
+		
+	</script>
+</body>
+</html>
