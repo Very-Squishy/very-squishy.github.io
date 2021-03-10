@@ -1,10 +1,60 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Amicable numbers</title>
 </head>
 
 <body>
+	
+	<script language="javascript">
+	
+		function checkamicable()
+		{
+			// Set the variables
+			num1 = document.getElementById('num1').value;
+			num2 = document.getElementById('num2').value;
+			arr1 = new Array();
+			arr2 = new Array();
+			sum1 = 0;
+			sum2 = 0;
+			
+			// Calculate factors and sums
+			for(i=1; i<num1; i++) { if(isAFactor(num1,i)==0) {arr1.push(parseInt(i)); sum1 = sum1+i}} 
+			for(i=1; i<num1; i++) { if(isAFactor(num2,i)==0) {arr2.push(parseInt(i)); sum2 = sum2+i}}
+			
+			// Display factors in a popup
+			alert(num1 + "\'s factors are " + arr1 + "\n\n" + num2 + "\'s factors are " + arr2);
+			
+			// Display result in a div
+			if (sum1==num2 && sum2==num1)
+				document.getElementById('result').innerHTML += '<br>The numbers are amicable!';
+			else
+				document.getElementById('result').innerHTML += '<br>The numbers are NOT amicable!';		
+		}
+		
+		function isAFactor(a,b)
+		{
+			return a%b;
+		}
+
+		//====================================================
+		
+		document.write("<br>==========================================");
+		document.write("<br><strong>Let's check some amicable numbers!</strong>");
+		document.write("<br>==========================================");		
+		
+		
+	</script>
+	
+
+	<form action="/action_page.php">
+		<label for="num1">Number 1:</label><input type="text" id="num1" name="num1" required><br>
+  		<label for="num2">Number 2:</label><input type="text" id="num2" name="num1" required><br>
+ 		<input type="submit" value="Check!" onclick = "checkamicable()">
+	</form> 
+	<div id="result"> </div>
+	
 </body>
 </html>
